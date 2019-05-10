@@ -1,0 +1,135 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+
+html, body {
+  width: 100%;
+  height: 100%; }
+
+.header {
+  width: 100%;
+  height: 100px;
+  box-sizing: border-box;
+  background: #fae363; }
+  .header .total {
+    font-size: 12px;
+    padding: 10px;
+    padding-right: 0; }
+    .header .total .pay-wrap span {
+      font-size: 30px;
+      display: block;
+      margin: 10px 0; }
+  .header .select-time {
+    position: absolute;
+    top: 10px;
+    right: 10px; }
+    .header .select-time span {
+      font-size: 12px;
+      padding: 3px 12px;
+      border-radius: 10px;
+      border: solid 1px #666; }
+    .header .select-time i {
+      font-size: 8px; }
+
+.mui-inner-wrap {
+  display: flex;
+  flex-direction: column; }
+  .mui-inner-wrap .con-wrap {
+    flex: 1;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    background: #fff; }
+
+.con-title {
+  display: flex;
+  padding: 10px;
+  box-sizing: border-box;
+  justify-content: space-between; }
+
+.tab-list {
+  border: solid 1px #666;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  overflow: hidden; }
+  .tab-list span {
+    flex: 1;
+    padding: 2px 15px;
+    cursor: pointer; }
+  .tab-list span.active {
+    background: #fae363; }
+
+.content {
+  flex: 1; }
+  .content .bill-wrap {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative; }
+    .content .bill-wrap .mui-slider-handle {
+      display: flex; }
+      .content .bill-wrap .mui-slider-handle > span {
+        width: 44px;
+        height: 44px;
+        background: #fae363;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 44px; }
+      .content .bill-wrap .mui-slider-handle .bill-list {
+        flex: 1;
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 10px;
+        box-sizing: border-box; }
+        .content .bill-wrap .mui-slider-handle .bill-list dt .b-l-tit {
+          font-size: 16px; }
+        .content .bill-wrap .mui-slider-handle .bill-list dt .c-l-data {
+          display: block;
+          font-size: 12px;
+          color: #C0C0C0; }
+        .content .bill-wrap .mui-slider-handle .bill-list dd {
+          font-size: 18px;
+          color: red; }
+  .content .table-wrap {
+    height: 100%;
+    display: none; }
+
+.mui-off-canvas-left {
+  background: #fff; }
+  .mui-off-canvas-left .mui-scroll {
+    background: #fff;
+    padding: 10px;
+    box-sizing: border-box; }
+    .mui-off-canvas-left .mui-scroll h1 {
+      padding-left: 5px;
+      font-size: 18px;
+      border-left: solid 3px #fae363; }
+    .mui-off-canvas-left .mui-scroll ul {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 25px; }
+      .mui-off-canvas-left .mui-scroll ul li {
+        margin: 5px;
+        padding: 2px 15px;
+        border-radius: 12px;
+        border: solid 1px #ccc;
+        font-size: 12px; }
+
+.go-bill {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  bottom: 35px;
+  left: 50%;
+  margin-left: -40px;
+  text-align: center;
+  line-height: 80px;
+  background: #fae363;
+  border-radius: 50%;
+  z-index: 99; }
+  .go-bill span {
+    font-size: 80px;
+    color: #fff; }

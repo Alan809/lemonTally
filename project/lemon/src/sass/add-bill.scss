@@ -1,0 +1,132 @@
+*{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+html,body{
+	width: 100%;
+	height: 100%;
+}
+.wrap{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background: #fff;
+}
+.header{
+	background:#ffda0e;
+	padding-bottom: 10px;
+	.header-t{
+		height: 50px;
+		align-items: center;
+		display: flex;
+		padding: 0 10px;
+		box-sizing: border-box;
+		justify-content: space-between;
+		.tab-list{
+			border: solid 1px #000;
+			border-radius: 20px;
+			display: flex;
+			align-items: center;
+			overflow: hidden;
+			span{
+				flex: 1;
+				padding: 5px 15px;
+				cursor: pointer;
+			}
+			span.active{
+				color: #ffda0e;
+				background: #000;
+			}
+		}
+	}
+	.header-b{
+		height: 60px;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		.text{
+			font-size: 30px;
+			border-right: 1px #000 solid;
+		}
+	}
+	.con{
+		margin: 0 10px;
+		border-bottom: solid 1px #000;
+	}
+}
+.section{
+	display: flex;
+	flex-wrap: wrap;
+	dl{
+		margin: 10px 0;
+		width: 25%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		dt{
+			margin-bottom: 10px;
+			width: 40px;
+			height: 40px;
+			background: #eee;
+			border-radius: 50%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			span{
+				font-size: 30px;
+				color: #666;
+			}
+		}
+		dt.bg{
+			background:#ffda0e;
+
+		}
+		dd{
+			font-size: 12px;
+			margin:0 auto;
+		}
+	}
+}
+.keyword{
+	border-left: solid 1px #ccc;
+	border-top: solid 1px #ccc;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	display: flex;
+	li{
+		width: 25%;
+		span{
+			display: block;
+			width: 100%;
+			height: 44px;
+			border-bottom: solid 1px #ccc;
+			border-right: solid 1px #ccc;
+			text-align: center;
+			line-height: 44px;
+		}
+		&:last-child{
+			span{
+				height: 176px;
+				line-height: 176px;
+				text-align: center;
+			}
+		}
+	}
+}
+.select-time{
+	display: flex;
+	height: 60px;
+	border-bottom: solid 1px #ccc;
+	border-top: solid 1px #ccc;
+	padding: 0 10px;
+	box-sizing: border-box;
+	justify-content: space-between;
+	align-items: center;
+	span{
+		color: #666;
+	}
+}

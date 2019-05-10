@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="css/index.css">
+		<link rel="stylesheet" href="css/mui.picker.css">
+		<link rel="stylesheet" href="css/mui.poppicker.css">
+		<link rel="stylesheet" type="text/css" href="css/mui.dtpicker.css"/>
+	</head>
+	<body>
+		<!-- 侧滑导航根容器 -->
+		<div class="mui-off-canvas-wrap mui-draggable mui-slide-in">
+			<!-- 菜单容器 -->
+			<aside class="mui-off-canvas-left">
+				<div class="mui-scroll-wrapper">
+					<div class="mui-scroll">
+						<h1>收支类型</h1>
+						<ul>
+							<li>全部支出</li>
+							<li>全部支出</li>
+							<li>全部支出</li>
+						</ul>
+						<h1>收支分类</h1>
+						<ul>
+							<li>餐饮</li>
+							<li>餐饮</li>
+							<li>餐饮</li>
+							<li>餐饮</li>
+							<li>餐饮</li>
+							<li>餐饮</li>
+						</ul>
+						<button type="button" class="mui-btn mui-btn-primary close-aside">显示主菜单</button>
+					</div>
+				</div>
+			</aside>
+			<!-- 主页面容器 -->
+			<div class="mui-inner-wrap">
+				<div class="go-bill"><span class="mui-icon mui-icon-plus"></span></div>
+				<!-- 主页面标题 -->
+				<header class="header">
+					<div class="total">
+						<div class="pay-wrap">
+							本月花费：
+							<span>1821.00</span>
+						</div>
+						<div class="comming-wrap">
+							本月收入：
+							<span>2632.00</span>
+						</div>
+					</div>
+					<div class="select-time">
+						<span class="select-type">年</span>
+						<span class="select-data">2018-12 </span>
+					</div>
+				</header>
+				<div class="mui-content con-wrap">
+					<div class="con-title">
+						<span class="mui-icon mui-icon-bars open-aside"></span>
+						<div class="tab-list">
+							<span class="active" data-id='0'>账单</span>
+							<span data-id='1'>图表</span>
+						</div>
+						<span class="mui-icon mui-icon-search"></span>
+					</div>
+					<div class="content">
+						<div class="bill-wrap">
+							<div class="mui-scroll-wrapper">
+								<div class="mui-scroll">
+									<ul id="OA_task_1" class="mui-table-view">
+										<li class="mui-table-view-cell">
+											<div class="mui-slider-right mui-disabled">
+												<a class="mui-btn mui-btn-red">删除</a>
+											</div>
+											<div class="mui-slider-handle">
+												<span class="mui-icon mui-icon-navigate"></span>
+												<dl class="bill-list">
+													<dt>
+														<span class="b-l-tit">餐饮</span>
+														<span class="c-l-data">10月20日</span>
+													</dt>
+													<dd>300.00</dd>
+												</dl>
+											</div>
+										</li>
+										<li class="mui-table-view-cell">
+											<div class="mui-slider-right mui-disabled">
+												<a class="mui-btn mui-btn-red">删除</a>
+											</div>
+											<div class="mui-slider-handle">
+												<span class="mui-icon mui-icon-navigate"></span>
+												<dl class="bill-list">
+													<dt>
+														<span class="b-l-tit">餐饮</span>
+														<span class="c-l-data">10月20日</span>
+													</dt>
+													<dd>300.00</dd>
+												</dl>
+											</div>
+										</li>
+										<li class="mui-table-view-cell">
+											<div class="mui-slider-right mui-disabled">
+												<a class="mui-btn mui-btn-red">删除</a>
+											</div>
+											<div class="mui-slider-handle">
+												<span class="mui-icon mui-icon-navigate"></span>
+												<dl class="bill-list">
+													<dt>
+														<span class="b-l-tit">餐饮</span>
+														<span class="c-l-data">10月20日</span>
+													</dt>
+													<dd>300.00</dd>
+												</dl>
+											</div>
+										</li>
+										<li class="mui-table-view-cell">
+											<div class="mui-slider-right mui-disabled">
+												<a class="mui-btn mui-btn-red">删除</a>
+											</div>
+											<div class="mui-slider-handle">
+												<span class="mui-icon mui-icon-navigate"></span>
+												<dl class="bill-list">
+													<dt>
+														<span class="b-l-tit">餐饮</span>
+														<span class="c-l-data">10月20日</span>
+													</dt>
+													<dd>300.00</dd>
+												</dl>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+
+						</div>
+						<div class="table-wrap">
+							 <div id="main" style="width: 350px;height:350px;"></div>
+						</div>
+
+					</div>
+				</div>
+				<nav class="mui-bar mui-bar-tab">
+					<a class="mui-tab-item mui-active" href="#tabbar">
+						<span class="mui-icon mui-icon-home"></span>
+						<span class="mui-tab-label">首页</span>
+					</a>
+					<a class="mui-tab-item" href="#tabbar-with-chat">
+						<span class="mui-icon mui-icon-email"><span class="mui-badge">9</span></span>
+						<span class="mui-tab-label">消息</span>
+					</a>
+					<a class="mui-tab-item" href="#tabbar-with-contact">
+						<span class="mui-icon mui-icon-contact"></span>
+						<span class="mui-tab-label">通讯录</span>
+					</a>
+					<a class="mui-tab-item" href="#tabbar-with-map">
+						<span class="mui-icon mui-icon-gear"></span>
+						<span class="mui-tab-label">设置</span>
+					</a>
+				</nav>
+
+				<!-- off-canvas backdrop -->
+				<div class="mui-off-canvas-backdrop"></div>
+			</div>
+		</div>
+		<script src="js/libs/require.js" data-main='./js/page/index.js' type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

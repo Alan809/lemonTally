@@ -1,0 +1,22 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+
+body, html {
+  width: 100%;
+  height: 100%;
+  background: #fff; }
+
+.ipt-wrap-top {
+  display: flex;
+  padding: 0 10px;
+  box-sizing: border-box;
+  justify-content: space-between;
+  height: 60px;
+  align-items: center;
+  background: #fff; }
+  .ipt-wrap-top .ipt {
+    text-align: right;
+    font-size: 12px;
+    border: 0; }
